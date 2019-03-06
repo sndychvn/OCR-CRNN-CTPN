@@ -1,5 +1,5 @@
 _sets = {}
-from .pascal_voc import pascal_voc
+from model_ctpn.lib.datasets.pascal_voc import pascal_voc
 
 def _selective_search_IJCV_top_k(split, year, top_k):
     imdb = pascal_voc(split, year)
