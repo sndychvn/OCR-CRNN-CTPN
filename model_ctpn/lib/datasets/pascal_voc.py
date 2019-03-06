@@ -13,7 +13,7 @@ import xml.etree.ElementTree as ET
 from model_ctpn.lib.datasets.imdb import imdb
 from model_ctpn.lib.datasets.ds_utils import ds_utils
 from ..fast_rcnn.config import cfg
-from numpy._distributor_init import NUMPY_MKL
+#from numpy._distributor_init import NUMPY_MKL
 
 class pascal_voc(imdb):
     def __init__(self, image_set, year, devkit_path=None):
