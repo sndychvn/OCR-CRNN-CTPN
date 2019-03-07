@@ -1,6 +1,6 @@
 import numpy as np
-from .config import cfg
-from ..utils.cython_nms import nms as cython_nms
+from model_ctpn.lib.fast_rcnn.config import cfg
+from model_ctpn.lib.utils.cython_nms import nms; cython_nms.install()
 
 def nms(dets, thresh):
     if dets.shape[0] == 0:
