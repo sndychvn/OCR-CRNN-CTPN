@@ -77,7 +77,7 @@ def createDataset(outputPath, imagePathList, labelList, lexiconList=None, checkV
 
 
 if __name__ == '__main__':
-    outputPath = "./train_lmdb"
+    outputPath = "C:/Users/TK5851/PycharmProjects/Output File"
     imgdata = open("./train_241.txt")
     imagePathList = list(imgdata)
 
