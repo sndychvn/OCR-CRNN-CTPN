@@ -1,5 +1,5 @@
 
-#cimport cython
+cimport Cython
 import numpy as np
 cimport numpy as np
 

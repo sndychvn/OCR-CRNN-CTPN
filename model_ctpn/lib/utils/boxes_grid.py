@@ -2,7 +2,7 @@ import numpy as np
 import math
 # TODO: make fast_rcnn irrelevant
 # >>>> obsolete, because it depends on sth outside of this project
-from model_ctpn.lib.fast_rcnn.config import cfg
+from .config import cfg
 
 
 # <<<< obsolete

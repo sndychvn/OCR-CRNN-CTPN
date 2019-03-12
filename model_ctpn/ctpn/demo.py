@@ -3,13 +3,13 @@ import tensorflow as tf
 import os, sys, cv2
 import numpy as np
 
-from ctpn.lib.networks.factory import get_network
-from ctpn.lib.fast_rcnn.config import cfg, cfg_from_file
-from ctpn.lib.fast_rcnn.test import test_ctpn
-from ctpn.lib.fast_rcnn.nms_wrapper import nms
-from ctpn.lib.utils.timer import Timer
-from ctpn.ctpn.text_proposal_connector import TextProposalConnector
-from ctpn.ctpn.other import draw_boxes
+from model_ctpn.lib.networks.factory import get_network
+from model_ctpn.lib.fast_rcnn.config import cfg, cfg_from_file
+#from model_ctpn.lib.fast_rcnn.test import test_ctpn
+from model_ctpn.lib.fast_rcnn.nms_wrapper import nms
+from model_ctpn.lib.utils.timer import Timer
+from model_ctpn.ctpn.text_proposal_connector import TextProposalConnector
+#from model_ctpn.ctpn.other import draw_boxes
 
 CLASSES = ('__background__',
            'text')
@@ -58,7 +58,7 @@ class CTPN(object):
         cv2.waitKey(0)
 
 
-    # 得到每一个文本框
+
     def get_text_lines(self,line, thresh):
         inds = np.where(line[:, -1] >= thresh)[0]
         if len(inds) == 0:

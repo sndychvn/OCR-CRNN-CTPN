@@ -1,7 +1,7 @@
 """Blob helper functions."""
 import numpy as np
 import cv2
-from model_ctpn.lib.fast_rcnn.config import cfg
+from lib.fast_rcnn.config import cfg
 
 def im_list_to_blob(ims):
     """Convert a list of images into a network input.

@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 cython bbox.pyx
 cython cython_nms.pyx
 #cython gpu_nms.pyx
